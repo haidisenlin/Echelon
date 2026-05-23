@@ -140,7 +140,7 @@ LLM 主通道    KeyBERT 校验通道
 
 - **输入**：论文 title + abstract
 - **方法**：结构化 prompt 提取所有领域相关概念（非仅关键词）
-- **LLM 选择**：复用 V14-B 已有的多 LLM Provider（Anthropic Claude / OpenAI GPT-4o / Ollama 本地），通过 `echelon/v14b/config.py` 中的 provider 配置切换
+- **LLM 选择**：支持多 LLM Provider（Anthropic Claude / OpenAI GPT-4o / Ollama 本地），通过 `echelon/config.py` 中的 provider 配置切换
 - **每篇输出**：10-20 个概念短语
 - **优势**：语义理解深，可提取隐含概念和方法论术语
 
